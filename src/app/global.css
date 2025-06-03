@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.components-container{
+    height: auto;
+    background: linear-gradient(to bottom, #f3e8ff 0%, #ffe3f3 100%);
+}
