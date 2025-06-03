@@ -6,5 +6,5 @@
 
 .components-container{
     height: auto;
-    background: linear-gradient(to bottom, #f3e8ff 0%, #ffe3f3 100%);
+    background: linear-gradient(135deg, rgb(225, 237, 255) 0%, #ffe3f3 100%);
 }

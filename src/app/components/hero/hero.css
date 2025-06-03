@@ -12,20 +12,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 
 .hero-h1{
   text-align: center;
   color: black;
-  text-wrap: wrap;
-  font-size: 2.5rem;  
+  font-size: 48px;  
   padding-left: 3rem;
   padding-right: 3rem;
-  font-weight: bolder;
-  padding-top: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
-
+.hero-h1-span1{
+  text-wrap: wrap;
+}
+.hero-h1-span2{
+  text-wrap: nowrap;
+}
 .hero-p{
     color: black;
     font-size: 1.2rem;
@@ -34,72 +39,19 @@
     padding-top: 1.75rem;
     text-align: center;
     font-weight: 350;
+    margin-bottom: 2rem;
 }
 .hero-but-book-a-evnt{
-    background-color:  #ED9926;
+    background-color:  #dc3232;
     border: none;
     padding: 1rem;
     border-radius: 5rem;
     font-size: large;
     font-weight: bold;
     width: 14rem;
+    color: white;
     margin-top: 1.5rem;
 }
-.second-h2{
-  margin-top: 2.5rem;
-  padding-right: 3rem;
-  padding-left: 30px;
-  font-size:27px;
-  font-weight: bolder;
-}
-.cards-cont{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-.card{
-   display: grid;
-    grid-template-columns: 1.3fr  .7fr;
-   width: 400px;
-   margin-bottom: 1rem;
-   height: 139px;
-   background-color: #FCFAF7;
-   border-radius:15px ;
-   text-wrap: wrap;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-              0 6px 12px rgba(0, 0, 0, 0.08);
-}
-.card> div >h3{
-  margin-top: 15px;
-  margin-left: 14px;
-}
-.card> div >p{
-  font-weight: 400;
-  color: #99784D;
-  padding-left: 16px;
-  font-size: large;
-  margin-top: 10px;
-}
-.card-image{
-  margin-top: 1.5rem;
-  width: 119px;
-  height: 87px;
-}
-.card:last-child{
-  margin-top: 0px;
-}
-.button-get-a-qoute{
-    background-color:  #ED9926;
-    border: none;
-    padding: 1rem;
-    border-radius: 5rem;
-    font-size: large;
-    font-weight: bold;
-    width: 12rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
 }
 
 

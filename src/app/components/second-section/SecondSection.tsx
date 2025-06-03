@@ -3,7 +3,7 @@ import late from "@/app/assets/Depth 4, Frame 1.png"
 import bland from "@/app/assets/Depth 4, Frame 1 (1).png"
 import hygiene from "@/app/assets/Depth 4, Frame 1 (2).png"
 import type { StaticImageData } from 'next/image'
-
+import './SecondSection.css'
 
 function SecondSection() {
     interface Cards {
@@ -31,15 +31,15 @@ function SecondSection() {
                 image: hygiene
         }]
   return (
-    <div>
+    <div className='second-section-container'>
         <h2 className='second-h2'>Tired of Caterers That Disappoint?</h2>
         <div className='cards-cont'>
             {cards.map((card)=>{
                 return(
                     <div key={card.id} className='card'>
                         <div className='card-info'>
-                        <h3>{card.question}</h3>
-                        <p>{card.answer}</p>
+                        <h3 className='card-question'>{card.question}</h3>
+                        <p className='card-answer'>{card.answer}</p>
                         </div>
                         <img src={card.image.src} alt={card.question} className='card-image' />
                     </div>
@@ -47,7 +47,7 @@ function SecondSection() {
             })}
 
         </div>
-       
+       <button className='button-get-a-qoute'>Get a Qoute</button>
     </div>
   )
 }
