@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
+  }
 
 
 .hero-h1{
@@ -32,8 +32,6 @@
 .hero-p{
     color: black;
     font-size: 1.2rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
     padding-top: 1.75rem;
     text-align: center;
     font-weight: 350;
