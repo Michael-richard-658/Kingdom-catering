@@ -10,7 +10,6 @@ export default function Home() {
     <div className="components-container">
       <Hero />
       <SecondSection />
-      <ThirdSection />
     </div>
     
   );
