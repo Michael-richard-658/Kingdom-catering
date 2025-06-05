@@ -1,0 +1,25 @@
+@media (max-width: 500px) {
+    .sixth-section-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faqs-container{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .FAQ-h3{
+        font-weight: 700;
+        color: #1C170D;
+        font-size: 24px;
+        margin-right: 3rem;
+    }
+    .faq-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

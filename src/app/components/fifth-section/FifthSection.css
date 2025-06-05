@@ -1,4 +1,7 @@
 @media (max-width: 500px) {
+    .fifth-section-container{
+        margin-top: 3.5rem;
+    }
     .cutomer-review-h3{
         color: #1C170D;
         margin-left: 1rem;
