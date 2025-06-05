@@ -4,6 +4,7 @@ import "./global.css";
 import SecondSection from "./components/second-section/SecondSection";
 import ThirdSection from "./components/third-section/ThirdSection";
 import ForthSection from "./components/fourth-section/ForthSection";
+import FifthSection from "./components/fifth-section/FifthSection";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <ForthSection />
+      <FifthSection  />
     </div>
     
   );

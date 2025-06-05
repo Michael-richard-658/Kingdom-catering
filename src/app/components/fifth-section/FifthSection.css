@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+    .cutomer-review-h3{
+        color: #1C170D;
+        margin-left: 1rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .reviews-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .review-profile-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .review-text-container{
+        padding-top: 1rem;
+    }
+}
