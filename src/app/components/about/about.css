@@ -1,0 +1,50 @@
+@media(max-width: 500px) {
+  .about-section{
+    background-color: #000000;
+    height: 300px;
+    width: 100vw;
+  }
+  .privacy-policy,.terms-of-service{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+  .contact-us,.about-p{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  .link-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+    gap: 1rem;
+}
+    .social-media-icons{
+       display: flex;
+       flex-direction: row;
+       justify-content: center; 
+       margin-top: 1rem;
+
+    }
+    .social-media-button{
+        background-color: transparent;
+        border: none;
+
+    }
+    .social-media-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .EOP{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        height: 3rem;
+        line-height: 1rem;
+    }
+}
