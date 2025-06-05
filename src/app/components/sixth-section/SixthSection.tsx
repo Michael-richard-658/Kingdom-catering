@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import './SixthSection.css'
-import { Button, Card, CardActions, Typography } from '@mui/material'
+import { Button, Card,  Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function SixthSection() {

@@ -50,6 +50,7 @@ function FifthSection() {
                     return(
                         <Card key={index} sx={{
                             borderRadius: '10px',
+                            boxShadow:" 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03)"
                         }}>
                             <div className='review-profile-container'>
                             <CardMedia
