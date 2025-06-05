@@ -5,6 +5,7 @@ import GSTandFAIPNG from "./thirdsectionassets/gst&FAI.png"
 import CustomMenuPNG from "./thirdsectionassets/custommenu.png"
 import PunctualDeliveryPNG from "./thirdsectionassets/puntualddelivery.png"
 import WideRangePNG from "./thirdsectionassets/widerange.png"
+import TastyandHotPNG from "./thirdsectionassets/tastyfresgPNG.png"
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 
 
@@ -34,12 +35,17 @@ function ThirdSection() {
       title:"Wide range: Veg, Non-veg, Regional, Continental",
       image:WideRangePNG,
       caption:"A diverse selection of vegetarian, non-vegetarian, regional, and continental cuisines"
+    },
+    {
+      title:"Tasty, hot, fresh food – always",
+      image:TastyandHotPNG,
+      caption:"Delicious, hot, and fresh food served at its best"
     }
   ]
 
 
   return (
-    <div>
+    <div className='third-section-container'>
         <h3 className='y-kingdom-catering-q-h3'>Why Choose Kingdom Catering?</h3>
         <div className='third-section-cards-container'>
             {cards.map((card, index) => {
@@ -91,7 +97,7 @@ function ThirdSection() {
             })}
         </div>
         
-
+            <button className='button-get-a-qoute'>Get a Qoute</button>
         </div>
   )
 }
