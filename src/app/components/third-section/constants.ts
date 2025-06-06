@@ -15,17 +15,17 @@ interface Card {
   export const cards : Card[]= [
     {
       title:"GST & FSSAI certified for full trust",
-      image:GSTandFAIPNG,
+      image:WideRangePNG,
       caption:'Certified by GST & FSSAI to ensure complete trust and quality'
     },
     {
       title:"Custom menus for every occasion",
-      image:CustomMenuPNG,
+      image:WideRangePNG,
       caption:"Personalized menus tailored to suit every event perfectly"
     },
     {
       title:"Punctual delivery and professional service",
-      image:PunctualDeliveryPNG,
+      image:WideRangePNG,
       caption:"Timely delivery and professional service to ensure a seamless experience"
     },
     {
@@ -35,7 +35,7 @@ interface Card {
     },
     {
       title:"Tasty, hot, fresh food – always",
-      image:TastyandHotPNG,
+      image:WideRangePNG,
       caption:"Delicious, hot, and fresh food served at its best"
     }
   ]
