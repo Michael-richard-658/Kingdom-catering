@@ -9,19 +9,20 @@ import SixthSection from "./components/sixth-section/SixthSection";
 import SeventhSection from "./components/seventh-section/SeventhSection";
 import About from "./components/about/About";
 
-
 export default function Home() {
   return (
-    <div className="components-container">
-      <Hero />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
-      <FifthSection  />
-      <SixthSection />
-      <SeventhSection />
-      <About />
-    </div>
-    
+    <>
+      <div className="static-background" />
+      <div className="components-container">
+        <Hero />
+        <SecondSection />
+        <ThirdSection />
+        <ForthSection />
+        <FifthSection />
+        <SixthSection />
+        <SeventhSection />
+        <About />
+      </div>
+    </>
   );
 }

@@ -19,13 +19,13 @@ function ThirdSection() {
               key={index}
               className="third-section-card"
               sx={{
-                borderBottomLeftRadius: "16px",
-                borderBottomRightRadius: "16px",
+                borderBottomLeftRadius: "24px",
+                borderBottomRightRadius: "24px",
                 borderTopLeftRadius: "250px",
                 borderTopRightRadius: "250px",
                 boxShadow: "0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03)",
                 overflow: "hidden",
-                backgroundColor: "rgba(255, 255, 255, 0.3)",
+                backgroundColor: "rgba(255, 255, 255, 0.45)",
                 width: "45%",
                 minHeight: 250
               }}
