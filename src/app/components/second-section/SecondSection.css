@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 4px;
 }
 .card{
    display: grid;
@@ -49,7 +49,7 @@
 }
 .card-answer{
   font-weight: 500;
-  color: rgb(164, 162, 162);
+  color: rgb(152, 152, 152);
   margin-left: 16px;
   font-size: large;
   margin-top: 5px;

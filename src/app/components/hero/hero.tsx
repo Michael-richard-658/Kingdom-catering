@@ -11,7 +11,7 @@ export default function Hero() {
         </h1>    
         <p className='hero-p'>Delicious food and seamless service for
         <span className='hero-p-span1'> weddings, birthdays, and big events –</span>
-        <span className='hero-p-span1'> made with love and hygiene.</span></p>
+        <span className='hero-p-span2'> made with love and hygiene.</span></p>
         <button className='hero-but-book-a-evnt'>Book Your Event Now</button>
         
     </div>
