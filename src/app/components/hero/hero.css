@@ -16,13 +16,12 @@
     width: 100vw;
   }
 
-
 .hero-h1{
   text-align: center;
   color: black;
   font-size: 40px;  
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .hero-h1-span1{
   text-wrap: wrap;
@@ -33,10 +32,8 @@
 .hero-p{
     color: black;
     font-size: 1.2rem;
-    padding-top: 1.75rem;
     text-align: center;
     font-weight: 350;
-    margin-bottom: 2rem;
     width: 350px
 }
 .hero-p-span1{
@@ -54,7 +51,7 @@
     font-weight: bold;
     width: 14rem;
     color: white;
-    margin-top: 1.5rem;
+    margin-top: 24px;
 }
 }
 
