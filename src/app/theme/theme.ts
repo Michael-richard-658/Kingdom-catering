@@ -13,9 +13,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'Plus Jakarta Sans, sans-serif',
     
   },
-  spacing: 8, // base spacing unit
 });
 export default theme;
