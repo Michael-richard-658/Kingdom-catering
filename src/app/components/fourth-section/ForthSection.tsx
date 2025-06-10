@@ -31,13 +31,22 @@ function ForthSection() {
                                         }}
                                     />
                                     <Typography variant='h6' sx={{
-                                        fontWeight: 400
-                                    }}>{card.event}</Typography>
+                                        fontWeight: 600,
+                                        fontSize:"17px",
+                                        textWrap:"nowrap",
+                                        margin:' 4px 4px'
+                                    }}>
+                                        {card.event}
+                                    </Typography>
                                     <Typography variant='body1' sx={{
                                         color: "#99784D",
-                                        fontWeight: 400,
-                                        fontSize: '16px',
-                                    }}>{card.description}</Typography>
+                                        fontWeight: 500,
+                                        fontSize: '14px',
+                                        margin:"4px 4px",
+                                        textAlign:"start"
+                                    }}>
+                                        {card.description}
+                                        </Typography>
                                 </CardContent>
                             </Card>
                         )

@@ -4,9 +4,9 @@
     }
     .cutomer-review-h3{
         color: #1C170D;
-        margin-left: 1rem;
+        margin-left: 16px;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 27px;
     }
     .reviews-container{
         display: flex;

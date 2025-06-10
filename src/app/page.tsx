@@ -7,7 +7,7 @@ import ForthSection from "./components/fourth-section/ForthSection";
 import FifthSection from "./components/fifth-section/FifthSection";
 import SixthSection from "./components/sixth-section/SixthSection";
 import SeventhSection from "./components/seventh-section/SeventhSection";
-import About from "./components/about/About";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <FifthSection />
         <SixthSection />
         <SeventhSection />
-        <About />
+        <Footer />
       </div>
     </>
   );

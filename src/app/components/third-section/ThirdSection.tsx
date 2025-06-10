@@ -3,6 +3,8 @@ import './ThirdSection.css'
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { cards } from './constants';
 
+
+
 function ThirdSection() {
 
 
@@ -11,7 +13,7 @@ function ThirdSection() {
     <div className='third-section-container'>
       <h3 className='y-kingdom-catering-q-h3' style={{
         padding: "16px"
-      }}>Why Choose Kingdom Catering?</h3>
+      }}><span style={{textWrap:'nowrap'}}>Why Choose Kingdom</span> Catering?</h3>
       <div className='third-section-cards-container'>
         {cards.map((card, index) => {
           return (
@@ -27,13 +29,13 @@ function ThirdSection() {
                 overflow: "hidden",
                 backgroundColor: "rgba(255, 255, 255, 0.45)",
                 width: "45%",
-                minHeight: 250
+                height:"280px"
               }}
             >
 
               <CardMedia
                 image={card.image.src}
-                alt={card.title}
+                alt={`${index}-img`}
                 component={"img"}
                 sx={{
                   width: "120px",
@@ -48,13 +50,13 @@ function ThirdSection() {
                   textAlign: "center",
                   fontSize: "14px",
                   fontWeight: "600",
-                  lineHeight: 1
+                  lineHeight: 1.3,
                 }}>{card.title}</Typography>
                 <Typography variant='body1' sx={{
                   textAlign: "center",
                   fontSize: "12px",
                   color: "#666",
-                  marginTop: 1,
+                  marginTop: '12px',
                   fontWeight: "400",
                   lineHeight: 1.4
                 }}>{card.caption}</Typography>

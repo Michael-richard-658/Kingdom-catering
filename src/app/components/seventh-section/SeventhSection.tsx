@@ -17,7 +17,17 @@ function SeventhSection() {
         fontSize: '20px',
         marginBottom: '16px',
       }}>Reach out to plan your custom menu today!</Typography>
-      <Button className='seventh-section-button' variant='contained' sx={{ borderRadius: 8 }} disableElevation={true}>Let's Get Started </Button>
+      <Button className='seventh-section-button' variant='contained' sx={{ borderRadius: 8,
+        background:"#dc3232",
+        fontWeight:550,
+        fontFamily:'arial',
+        fontSize:'16px',
+        paddingTop:"14px",
+        paddingBottom:"14px",
+        marginBottom:"64px"
+       }} disableElevation={true}>
+        Let's Get Started 
+        </Button>
     </div>
   )
 }

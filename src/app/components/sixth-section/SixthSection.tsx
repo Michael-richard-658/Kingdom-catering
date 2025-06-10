@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import './SixthSection.css'
-import { Button, Card,  Typography } from '@mui/material'
+import { Button, Card,  IconButton,  Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { FAQs } from './constants';
 
@@ -29,7 +29,7 @@ function SixthSection() {
                             <Card
                                 key={index}
                                 sx={{
-                                    width: '95vw',
+                                    width: '96%',
                                     height: isOpen ? "170px" : '65px',
                                     transition: "all 0.3s ease-in-out",
                                     display: 'grid',
@@ -51,7 +51,7 @@ function SixthSection() {
                                         textWrap: 'nowrap',
                                     }}>{faq.question}</Typography>
 
-                                    <Button
+                                    <IconButton
                                         onClick={() => toggleAnswer(index)}
                                         sx={{
                                             minWidth: 'unset',
@@ -61,16 +61,20 @@ function SixthSection() {
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
+                                            background:"transparent",
                                             marginTop: '2px',
                                             marginLeft: 'auto',
                                             marginRight: '1rem',
                                             transform: isOpen ? 'rotate(270deg)' : 'rotate(90deg)',
                                             transition: 'transform 0.3s ease',
-                                            color:"black"
-                                        }}
+                                            color:"black",
+                                           
+                                        
+                                        
+                                        } } disableRipple   
                                     >
                                         <ArrowForwardIosIcon fontSize="small" />
-                                    </Button>
+                                    </IconButton>
                                 </div>
 
                                 {isOpen && (

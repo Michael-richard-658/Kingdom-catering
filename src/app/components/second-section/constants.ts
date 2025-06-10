@@ -24,7 +24,12 @@ interface Cards {
                 image: bland
         },{
                 id: 3,
-                question:"Poor hygiene or unlicensed service?",
+                question:"Poor hygiene?",
+                answer:"Not anymore – Kingdom Catering brings royalty to your table!",
+                image: hygiene
+        },{
+                id: 4,
+                question:" Unlicensed service?",
                 answer:"Not anymore – Kingdom Catering brings royalty to your table!",
                 image: hygiene
         }]
