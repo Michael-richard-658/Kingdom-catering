@@ -39,8 +39,8 @@ function Footer() {
       <hr  style={{width:"90%"}}/>
       <div className='link-container'>
         <a href="/privacy-policy" className='privacy-policy'>Privacy-policy</a>
-        <a href="/terms-of-service" className='terms-of-service'>Terms of Service</a>
         <a href="/contact" className='contact-us'>Contact Us</a>
+        <a href="/terms-of-service" className='terms-of-service'>Terms of Service</a>
         <a href="/about" className='about-p'>About</a>
       </div>
 
