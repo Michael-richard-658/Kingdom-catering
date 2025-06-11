@@ -1,3 +1,5 @@
+"use client"
+
 import { StaticImageData } from 'next/image'
 import weddingPNG from "./Fourthsectionassets/wedding.png"
 import bdayPNG from "./Fourthsectionassets/bday.png"

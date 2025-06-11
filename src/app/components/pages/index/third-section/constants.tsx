@@ -1,3 +1,4 @@
+"use client"
 import React,{JSX} from 'react';
 import { StaticImageData } from 'next/image';
 import WideRangePNG from './thirdsectionassets/widerange.png';

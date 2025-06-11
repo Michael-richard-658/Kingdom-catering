@@ -34,11 +34,12 @@ export const HeroDescription = styled.div`
     text-align: center;
     font-weight: 350;
     width: 98%;
-    margin-top: 10px;
+    line-height:1.1;
+    margin-top: 5%;
   }
 `;
 
-export const SpanWrapper = styled.p`
+export const SpanWrapper = styled.span`
   ${mobile} {
     text-wrap: wrap;
     margin: 0;

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import './FifthSection.css'
 import { Card, CardMedia, Typography } from '@mui/material';

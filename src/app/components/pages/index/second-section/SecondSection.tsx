@@ -1,28 +1,38 @@
+"use client"
 import React from 'react'
-import './SecondSection.css'
 import { cards } from './constants'
+import { TiredOfCaterersSection, TitleH2,CardsContainer, CustomCard, InformationConatiner, GetQouteButton, Question, Answer} from './second-section.styled'
 
 function SecondSection() {
     
   return (
-    <div className='second-section-container'>
-        <h2 className='second-h2'>Tired of Caterers That Disappoint?</h2>
-        <div className='cards-cont'>
+    <TiredOfCaterersSection >
+        <TitleH2 >Tired of Caterers That Disappoint?</TitleH2>
+        <CardsContainer >
             {cards.map((card)=>{
                 return(
-                    <div key={card.id} className='card'>
-                        <div className='card-info'>
-                        <h3 className='card-question'>{card.question}</h3>
-                        <p className='card-answer'>{card.answer}</p>
-                        </div>
-                        <img src={card.image.src} alt={card.question} className='card-image' />
-                    </div>
+                    <CustomCard key={card.id}>
+                        <InformationConatiner >
+                      <Question>
+                            {card.question}
+                        </Question>      
+                        <Answer>
+                            {card.answer}
+                        </Answer>
+                        </InformationConatiner>
+                       <img style={{
+                        minWidth:"119px",
+                        height:"87px",
+                        marginRight:"3%"
+                       }} 
+                        src={card.image.src}/> 
+                    </CustomCard>
                 )
             })}
 
-        </div>
-       <button className='button-get-a-qoute'>Get a Qoute</button>
-    </div>
+        </CardsContainer>
+       <GetQouteButton >Get a Qoute</GetQouteButton>
+    </TiredOfCaterersSection>
   )
 }
 

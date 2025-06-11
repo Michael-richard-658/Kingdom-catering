@@ -1,3 +1,6 @@
+"use client"
+
+
 import { StaticImageData } from 'next/image';
 import women1 from "./Fifth-section-assets/women1.png"
 import women2 from "./Fifth-section-assets/women2.png"

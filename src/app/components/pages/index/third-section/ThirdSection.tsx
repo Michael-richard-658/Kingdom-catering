@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import './ThirdSection.css'
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';

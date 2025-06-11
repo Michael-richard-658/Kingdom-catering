@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ThemeRegistry from "./theme/ThemeRegistry";
-import "./global.css";
+import { CssBaseline } from "@mui/material";
+import { GlobalStyles } from "./styled-global";
 
 export const metadata: Metadata = {
   title: "Kingdom-Catering",
@@ -21,7 +22,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeRegistry>{children}</ThemeRegistry>
+        <ThemeRegistry>
+          <GlobalStyles />
+          {children}
+          </ThemeRegistry>
       </body>
     </html>
   );

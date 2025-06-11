@@ -1,7 +1,10 @@
+'use client'
+import { Card } from "@mui/material";
+import styled from "styled-components";
 
 
-@media (max-width: 500px) {
-.second-section-container{
+
+export const TiredOfCaterersSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,63 +13,59 @@
     margin: 0;
     padding: 0%;
     margin: 0%;
-}
+`
+export const  TitleH2 = styled.h2`
+    font-size:27px;
+    font-weight: bolder;
+    margin-left: 1.5rem;
+    margin-right: 4rem;   
+` 
 
-.second-h2{
-  font-size:27px;
-  font-weight: bolder;
-  margin-left: 1.5rem;
-  margin-right: 4rem;
-}
-.cards-cont{
+export const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.card{
-   display: grid;
-   grid-template-columns: 1.3fr  .7fr;
-   width: 95%;
+`
+
+export const CustomCard = styled(Card)`
    margin-bottom: 1rem;
-   height: 50%;
    background-color: #FCFAF7;
    border-radius:15px ;
-   text-wrap: wrap;
    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 
             0 2px 4px rgba(0, 0, 0, 0.03);
+   display:flex;
+   flex-flow:row;
+   align-items:center; 
+   width:96%;
+   jsutify-content:space-around
+`
 
-}
-.card-info{
-  overflow-y:hidden;
-  margin: 0%;
-}
-.card-question{
+export const InformationConatiner = styled.div`
+ 
+`
+export const Question = styled.h3`
   margin-left: 14px;
   margin-top: 15px;
   margin-bottom: 0px;
-}
-.card-answer{
+`
+
+export const Answer = styled.p`
   font-weight: 500;
   color: rgb(152, 152, 152);
   margin-left: 16px;
   margin-top:8px ;
   font-size: large;
-}
-.card-image{
-  margin: 4px 8px;
-  margin-top: 1.4rem;
-  width: 119px;
-  height: 87px;
-}
-@media(min-width:485px){
-  .card{
-    height: 130px;
-  }
-  
+`
 
-}
-.button-get-a-qoute{
+
+
+export const ImageSecondSection = styled.img`
+    width:'119px;
+    height:'87px';
+`
+
+export const GetQouteButton = styled.button`
     background-color:  #dc3232;
     border: none;
     color: white;
@@ -77,5 +76,4 @@
     width: 12rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
-  }
-}
+`

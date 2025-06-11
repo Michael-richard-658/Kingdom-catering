@@ -1,3 +1,4 @@
+"use client"
 import late from "@/app/assets/Depth 4, Frame 1.png"
 import bland from "@/app/assets/Depth 4, Frame 1 (1).png"
 import hygiene from "@/app/assets/Depth 4, Frame 1 (2).png"
