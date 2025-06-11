@@ -45,7 +45,7 @@ function Footer() {
       </div>
 
 
-      <p className='EOP' onClick={scrollToTop}> ©2025 Kingdom Catering. All rights reserved.</p>
+      <p className='EOP' onClick={scrollToTop}> <span style={{marginRight:"8px"}}>©</span>2025 Kingdom Catering. All rights reserved.</p>
     </div>
   )
 }
