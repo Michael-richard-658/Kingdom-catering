@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import {  CardContent } from '@mui/material';
 import { cards } from './constants';
-import { CardBodyS3,CardMediaS3, CardsContainerS3, CardTitleS3, CustomCardS3, QuestionH3S3, WhyChooseKingdomCateringSection } from './thirdsectionassets/third.styled';
+import { CardBodyS3,CardMediaS3, CardsContainerS3, CardTitleS3, CustomCardS3, QuestionH3S3, WhyChooseKingdomCateringSection } 
+from './third.styled';
 import { GetQouteButton } from '../second-section/second-section.styled';
 
 

@@ -1,16 +1,20 @@
 import { Card, CardMedia, Typography } from "@mui/material";
 import styled from "styled-components";
-
+import {mobile} from "@/app/utils/media"
 
 
 export const WhyChooseKingdomCateringSection = styled.div`
+ ${mobile}{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
 ` 
 
 export const QuestionH3S3 = styled.h3`
+${mobile}{
     padding:16px;
     font-weight: 700;
     font-size: 27px;
@@ -18,9 +22,11 @@ export const QuestionH3S3 = styled.h3`
     margin-left: 12px;
     margin-right: 20%;
     margin-bottom: 8px;
+}
 `
 
 export const CardsContainerS3 = styled.div`
+${mobile}{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,9 +35,11 @@ export const CardsContainerS3 = styled.div`
     width: 100%;
     column-gap: 8px;
     gap:4%
+}
 ` 
 
 export const CustomCardS3 = styled(Card)`
+${mobile}{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,22 +55,28 @@ export const CustomCardS3 = styled(Card)`
     width: 45%;
     height: 280px;
     margin-bottom:14px
+}
 `
 export const CardMediaS3 = styled(CardMedia)`
+${mobile}{
     width: 120px;
     min-height: 120px;
     border-radius: 50%;
     opacity: 1;
     margin-top: -4px;
+}
 `
 export const CardTitleS3 = styled(Typography)`
+${mobile}{
     text-align: center;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.3;
+}
 `
 
 export const CardBodyS3 = styled(Typography)`
+${mobile}{
   text-align: center;
   font-size: 12px;
   color: #666;
@@ -71,5 +85,6 @@ export const CardBodyS3 = styled(Typography)`
   line-height: 1.4;
   font-weight:500;
   color: rgb(155, 155, 155);
+}
 `
 
