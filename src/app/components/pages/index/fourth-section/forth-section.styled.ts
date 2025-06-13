@@ -25,7 +25,8 @@ export const CardsConatinerS4 = styled.div`
  ${mobile}{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    gap: 4%;
+    column-gap: 4%;
+    row-gap:14px;
     width: 95vw;
 }
 `

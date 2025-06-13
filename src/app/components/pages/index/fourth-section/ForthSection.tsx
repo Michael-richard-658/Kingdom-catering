@@ -2,7 +2,7 @@
 import React from 'react'
 import {  CardContent, CardMedia, Typography } from '@mui/material'
 import { cards } from './constants'
-import { CardsConatinerS4, CustomCardS4, EventDescription, EventTitle, PerfectForAllH3, PerfectForAllMomentsContainer } from './forth-section.styled'
+import { CardsConatinerS4, CustomCardS4, EventTitle, PerfectForAllH3, PerfectForAllMomentsContainer,EventDescription } from './forth-section.styled'
 
 function ForthSection() {
 

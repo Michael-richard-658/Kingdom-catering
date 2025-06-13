@@ -1,27 +1,23 @@
 "use client"
 
 import React from 'react'
-import './FifthSection.css'
 import { Card, CardMedia, Typography } from '@mui/material';
 import {reviews} from './constants'
+import { ReviewsContainer, ReviewsH3, ReviewsSectionContainer,CustomCardS5, ReviewProfileContainer, ReviewerName, ReviewTextContainer, ReviewDescription, ReviewDate } from './fifth-section.styled';
 
 
 
 function FifthSection() {
     
   return (
-    <div className='fifth-section-container'>
-        <h3 className='cutomer-review-h3'>What Our Customers Say</h3>
-        <div className='reviews-container'>
+    <ReviewsSectionContainer >
+        <ReviewsH3 >What Our Customers Say</ReviewsH3>
+        <ReviewsContainer >
             {
                 reviews.map((review, index) => {
                     return(
-                        <Card key={index} sx={{
-                            borderRadius: '12px',
-                            boxShadow:" 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03)",
-                            width:"96%"
-                        }}>
-                            <div className='review-profile-container'>
+                        <CustomCardS5 key={index} >
+                            <ReviewProfileContainer >
                             <CardMedia
                                 component={"img"}
                                 image={review.profilePic.src}
@@ -33,20 +29,15 @@ function FifthSection() {
                                     paddingTop:'1rem'
                                 }}
                                 />
-                                <div className='review-text-container'>
-                            <Typography variant='h6'sx={{
-                                textWrap: 'nowrap',
-                                fontWeight: 500,
-                            }}>{review.name}</Typography>
-                            <Typography variant='subtitle1' className='review-date' sx={
-                                {
-                                    color:"#99784D",
-                                    fontWeight: 400,
-                                    fontSize:"16px",
-                                }
-                            }>{review.date} </Typography>
-                            </div>
-                            </div>
+                                <ReviewTextContainer >
+                            <ReviewerName variant='h6'>
+                                {review.name}
+                                </ReviewerName>
+                            <ReviewDate variant='subtitle1' >
+                                {review.date} 
+                            </ReviewDate>
+                            </ReviewTextContainer>
+                            </ReviewProfileContainer>
                             <CardMedia
                                 component={"img"}
                                 image={review.star.src}
@@ -57,20 +48,20 @@ function FifthSection() {
                                     marginTop: '0.5rem',
                                 }}
                                 />
-                                <Typography variant='body1' sx={{
+                                <ReviewDescription variant='body1' sx={{
                                     margin: '1rem 1rem',
                                     color: "#1C170D",
                                     fontWeight: 500,
                                     paddingBottom: '1rem',
                                 }}>
                                 {review.review}
-                                </Typography>
-                        </Card>
+                                </ReviewDescription>
+                        </CustomCardS5>
                     )
                 })
             }
-        </div>
-    </div>
+        </ReviewsContainer>
+    </ReviewsSectionContainer>
   )
 }
 
