@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
-import './ThirdSection.css'
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { cards } from './constants';
+import { CardBodyS3,CardMediaS3, CardsContainerS3, CardTitleS3, CustomCardS3, QuestionH3S3, WhyChooseKingdomCateringSection } from './thirdsectionassets/third.styled';
+import { GetQouteButton } from '../second-section/second-section.styled';
 
 
 
@@ -11,65 +12,31 @@ function ThirdSection() {
 
 
   return (
-    <div className='third-section-container'>
-      <h3 className='y-kingdom-catering-q-h3' style={{
-        padding: "16px"
-      }}><span style={{textWrap:'nowrap'}}>Why Choose Kingdom</span> Catering?</h3>
-      <div className='third-section-cards-container'>
+    <WhyChooseKingdomCateringSection >
+      <QuestionH3S3 ><span style={{textWrap:'nowrap'}}>Why Choose Kingdom</span> Catering?</QuestionH3S3>
+      <CardsContainerS3 >
         {cards.map((card, index) => {
           return (
-            <Card
+            <CustomCardS3
               key={index}
-              className="third-section-card"
-              sx={{
-                borderBottomLeftRadius: "24px",
-                borderBottomRightRadius: "24px",
-                borderTopLeftRadius: "250px",
-                borderTopRightRadius: "250px",
-                boxShadow: "0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03)",
-                overflow: "hidden",
-                backgroundColor: "rgba(255, 255, 255, 0.45)",
-                width: "45%",
-                height:"280px"
-              }}
+              
             >
 
-              <CardMedia
-                image={card.image.src}
-                alt={`${index}-img`}
-                component={"img"}
-                sx={{
-                  width: "120px",
-                  height: "120px",
-                  borderRadius: "50%",
-                  opacity: 1,
-                  marginTop: -1
-                }}
+              <CardMediaS3
+                image={card.image.src}                
               />
               <CardContent>
-                <Typography variant='h6' className='third-section-card-title' sx={{
-                  textAlign: "center",
-                  fontSize: "14px",
-                  fontWeight: "600",
-                  lineHeight: 1.3,
-                }}>{card.title}</Typography>
-                <Typography variant='body1' sx={{
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#666",
-                  marginTop: '12px',
-                  fontWeight: "400",
-                  lineHeight: 1.4
-                }}>{card.caption}</Typography>
+                <CardTitleS3 variant='h6' >{card.title}</CardTitleS3>
+                <CardBodyS3 variant='body1'>{card.caption}</CardBodyS3>
               </CardContent>
 
-            </Card>
+            </CustomCardS3>
           )
         })}
-      </div>
+      </CardsContainerS3>
 
-      <button className='button-get-a-qoute'>Get a Qoute</button>
-    </div>
+      <GetQouteButton >Get a Qoute</GetQouteButton>
+    </WhyChooseKingdomCateringSection>
   )
 }
 

@@ -23,7 +23,7 @@ function SecondSection() {
                        <img style={{
                         minWidth:"119px",
                         height:"87px",
-                        marginRight:"3%"
+                        marginRight:"2.5%"
                        }} 
                         src={card.image.src}/> 
                     </CustomCard>
