@@ -1,9 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import './SixthSection.css'
-import { Button, Card,  IconButton,  Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { FAQs } from './constants';
+import { FAQAnswer, FAQIcon, FAQInfo, FAQQuestion, FAQSCard, FAQSConatiner, FAQSH3, SixthSectionContainer } from './Sixth-section.styled';
 
 
 function SixthSection() {
@@ -19,77 +18,38 @@ function SixthSection() {
     }
 
     return (
-        <div className='sixth-section-container'>
-            <h3 className='FAQ-h3'>Frequently Asked Questions</h3>
-            <div className='faqs-container'>
+        < SixthSectionContainer>
+            <FAQSH3 >Frequently Asked Questions</FAQSH3>
+            <FAQSConatiner >
                 {
                     FAQs.map((faq, index) => {
                         const isOpen = openIndexes.includes(index);
                         return (
-                            <Card
-                                key={index}
-                                sx={{
-                                    width: '96%',
-                                    height: isOpen ? "170px" : '65px',
-                                    transition: "all 0.3s ease-in-out",
-                                    display: 'grid',
-                                    gridTemplateRows: '.1fr auto',
-                                    marginBottom: '1rem',
-                                    backgroundColor:'white',
-                                    borderRadius: '10px',
-                                    boxShadow:" 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03)"
-
-                                }}
+                            <FAQSCard
+                                isOpen={isOpen}
+                                key={index}   
                             >
-                                <div className='faq-info' style={{
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    alignItems: 'center',
-                                }}>
-                                    <Typography variant='h6' sx={{
-                                        marginLeft: '1rem',
-                                        textWrap: 'nowrap',
-                                    }}>{faq.question}</Typography>
+                                <FAQInfo>
+                                    <FAQQuestion variant='h6' >{faq.question}</FAQQuestion>
 
-                                    <IconButton
+                                    <FAQIcon
                                         onClick={() => toggleAnswer(index)}
-                                        sx={{
-                                            minWidth: 'unset',
-                                            padding: 0,
-                                            height: '65px',
-                                            width: '30px',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            background:"transparent",
-                                            marginTop: '2px',
-                                            marginLeft: 'auto',
-                                            marginRight: '1rem',
-                                            transform: isOpen ? 'rotate(270deg)' : 'rotate(90deg)',
-                                            transition: 'transform 0.3s ease',
-                                            color:"black",
-                                           
-                                        
-                                        
-                                        } } disableRipple   
+                                        isOpen={isOpen}
+                                        disableRipple 
                                     >
-                                        <ArrowForwardIosIcon fontSize="small" />
-                                    </IconButton>
-                                </div>
+                                        <ArrowForwardIosIcon fontSize="small"   />
+                                    </FAQIcon>
+                                </FAQInfo>
 
                                 {isOpen && (
-                                    <Typography variant='body1' sx={{
-                                        marginLeft: '1rem',
-                                        color: '#99784D',
-                                        marginBottom: '2rem',
-                                    }}>{faq.answer}</Typography>
+                                    <FAQAnswer variant='body1'>{faq.answer}</FAQAnswer>
                                 )}
-                            </Card>
+                            </FAQSCard>
                         );
                     })
                 }
-            </div>
-        </div>
+            </FAQSConatiner>
+        </SixthSectionContainer>
     );
 }
 

@@ -1,36 +1,17 @@
 "use client"
 
-import { Button, Typography } from '@mui/material'
 import React from 'react'
-import './SeventhSection.css'
+import { LetsGetStartedButton, MakeEventRoyaleDescription, MakeEventRoyaleTitle, MakeYourEventRoyaleSection } from './seventh-section.styled'
 
 function SeventhSection() {
   return (
-    <div className='seventh-section-container'>
-      <Typography variant='h4' sx={{
-        fontWeight: 600,
-        color: '#1C170D',
-        marginBottom: '6px',
-        marginTop: '16px',
-      }}>Make Your Event Royal</Typography>
-      <Typography variant='caption' sx={{
-        fontWeight: 100,
-        color: "#1C170D",
-        fontSize: '20px',
-        marginBottom: '16px',
-      }}>Reach out to plan your custom menu today!</Typography>
-      <Button className='seventh-section-button' variant='contained' sx={{ borderRadius: 8,
-        background:"#dc3232",
-        fontWeight:550,
-        fontFamily:'arial',
-        fontSize:'16px',
-        paddingTop:"14px",
-        paddingBottom:"14px",
-        marginBottom:"64px"
-       }} disableElevation={true}>
+    <MakeYourEventRoyaleSection >
+      <MakeEventRoyaleTitle variant='h4' >Make Your Event Royal</MakeEventRoyaleTitle>
+      <MakeEventRoyaleDescription variant='caption' >Reach out to plan your custom menu today!</MakeEventRoyaleDescription>
+      <LetsGetStartedButton className='seventh-section-button' variant='contained'  disableElevation={true}>
         Let's Get Started 
-        </Button>
-    </div>
+        </LetsGetStartedButton>
+    </MakeYourEventRoyaleSection>
   )
 }
 
