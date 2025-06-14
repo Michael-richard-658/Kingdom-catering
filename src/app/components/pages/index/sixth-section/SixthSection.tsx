@@ -1,54 +1,42 @@
 "use client"
-import React, { useState } from 'react'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import React from 'react'
 import { FAQs } from './constants';
-import { FAQAnswer, FAQIcon, FAQInfo, FAQQuestion, FAQSCard, FAQSConatiner, FAQSH3, SixthSectionContainer } from './Sixth-section.styled';
-
+import { FAQAccordion, FAQAnswer,FAQQuestion,FAQSConatiner, FAQSH3, SixthSectionContainer } from './Sixth-section.styled';
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function SixthSection() {
     
-    const [openIndexes, setOpenIndexes] = useState<number[]>([]);
-
-    function toggleAnswer(index: number) {
-        setOpenIndexes(prev =>
-            prev.includes(index)
-                ? prev.filter(i => i !== index)
-                : [...prev, index]
-        );
-    }
+    
 
     return (
         < SixthSectionContainer>
-            <FAQSH3 >Frequently Asked Questions</FAQSH3>
-            <FAQSConatiner >
-                {
-                    FAQs.map((faq, index) => {
-                        const isOpen = openIndexes.includes(index);
-                        return (
-                            <FAQSCard
-                                isOpen={isOpen}
-                                key={index}   
-                            >
-                                <FAQInfo>
-                                    <FAQQuestion variant='h6' >{faq.question}</FAQQuestion>
-
-                                    <FAQIcon
-                                        onClick={() => toggleAnswer(index)}
-                                        isOpen={isOpen}
-                                        disableRipple 
+                <FAQSH3 >Frequently Asked Questions</FAQSH3>
+                    <FAQSConatiner >
+                        {FAQs.map((faq, index) => (
+                                <FAQAccordion key={index} >
+                                    <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon sx={{ fontSize: "xx-large" }} />}
+                                    aria-controls={`faq-content-${index}`}
+                                    id={`faq-header-${index}`}
                                     >
-                                        <ArrowForwardIosIcon fontSize="small"   />
-                                    </FAQIcon>
-                                </FAQInfo>
-
-                                {isOpen && (
-                                    <FAQAnswer variant='body1'>{faq.answer}</FAQAnswer>
-                                )}
-                            </FAQSCard>
-                        );
-                    })
-                }
-            </FAQSConatiner>
+                                    <FAQQuestion variant="h6" >
+                                        {faq.question}
+                                    </FAQQuestion>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                    <FAQAnswer variant="body1" >
+                                        {faq.answer}
+                                    </FAQAnswer>
+                                    </AccordionDetails>
+                                </FAQAccordion>
+))}
+                </FAQSConatiner>
         </SixthSectionContainer>
     );
 }
