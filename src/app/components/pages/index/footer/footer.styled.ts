@@ -45,7 +45,7 @@ export const PageLinkContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 8px;
     margin-bottom: 32px;
 }
 `
@@ -55,14 +55,14 @@ export const Links = styled.a`
     ${mobile}{
     color: white;
     text-decoration: none;
-    font-weight: 800;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 14px;
 }
 `
 export const EOP = styled.p`
     ${mobile}{
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 0%;
