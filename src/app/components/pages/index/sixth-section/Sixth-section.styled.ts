@@ -99,6 +99,7 @@ export const FAQAccordion = styled(Accordion)`
     border-radius: 12px !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
     border:none;
+    background-color: rgba(252, 250, 247, 0.45);
     
      &::before {
     display: none;
