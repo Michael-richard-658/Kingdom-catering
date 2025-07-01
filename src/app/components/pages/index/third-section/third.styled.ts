@@ -44,14 +44,11 @@ ${mobile}{
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding-top: 2rem;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-top-left-radius: 250px;
-    border-top-right-radius: 250px;
+    padding-top: 16px;
+    border-radius:16px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: white;
     width: 45%;
     height: 280px;
     margin-bottom:14px
@@ -63,7 +60,6 @@ ${mobile}{
     min-height: 120px;
     border-radius: 50%;
     opacity: 1;
-    margin-top: -4px;
 }
 `
 export const CardTitleS3 = styled(Typography)`
