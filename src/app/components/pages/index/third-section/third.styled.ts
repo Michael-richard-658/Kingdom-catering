@@ -40,7 +40,15 @@ ${mobile}{
 
 export const CustomCardS3 = styled(Card)`
 ${mobile}{
-    display: flex;
+    position:relative;
+    margin:16px;
+    border-radius:16px;
+    width:96%;
+    height:450px;
+}
+`
+/*
+display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -52,35 +60,40 @@ ${mobile}{
     width: 45%;
     height: 280px;
     margin-bottom:14px
-}
-`
+    */
+
 export const CardMediaS3 = styled(CardMedia)`
 ${mobile}{
     width: 120px;
     min-height: 120px;
     border-radius: 50%;
     opacity: 1;
+    position:absolute;
+    top:31%;
+    left:34%;
+
 }
 `
 export const CardTitleS3 = styled(Typography)`
 ${mobile}{
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.5;
+    margin-top:3.5rem;
 }
 `
 
 export const CardBodyS3 = styled(Typography)`
 ${mobile}{
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
   margin-top: 12px;
   font-weight: 400;
   line-height: 1.4;
   font-weight:500;
-  color: rgb(155, 155, 155);
+  color: rgb(97, 97, 97);
 }
 `
 

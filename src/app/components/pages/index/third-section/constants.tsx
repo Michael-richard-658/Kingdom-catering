@@ -1,8 +1,8 @@
 "use client"
 import React,{JSX} from 'react';
 import { StaticImageData } from 'next/image';
-import WideRangePNG from './thirdsectionassets/widerange.png';
-
+//import WideRangePNG from './thirdsectionassets/widerange.png';
+import WideRangePNG from './thirdsectionassets/tempcrown.jpg'
 interface Card {
   title: JSX.Element; 
   image: StaticImageData;
@@ -13,7 +13,7 @@ export const cards: Card[] = [
   {
     title: <>GST & FSSAI certified for full trust</>,
     image: WideRangePNG,
-    caption: 'Certified by GST & FSSAI to ensure complete trust and quality',
+    caption: 'We are GST & FSSAI certified, ensuring complete transparency and compliance. This certification reflects our commitment to maintaining high standards in hygiene, quality, and legality—giving .',
   },
   {
     title: <>Custom menus for <span style={{textWrap:"nowrap"}}>every occasion</span></>,
