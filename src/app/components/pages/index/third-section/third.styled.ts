@@ -40,11 +40,14 @@ ${mobile}{
 
 export const CustomCardS3 = styled(Card)`
 ${mobile}{
-    position:relative;
+    position: relative;
     margin:16px;
     border-radius:16px;
     width:96%;
     height:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 `
 /*
@@ -68,9 +71,8 @@ ${mobile}{
     min-height: 120px;
     border-radius: 50%;
     opacity: 1;
-    position:absolute;
-    top:31%;
-    left:34%;
+    z-index: 1;
+    margin-top:140px;
 
 }
 `
@@ -80,7 +82,6 @@ ${mobile}{
     font-size: 18px;
     font-weight: 600;
     line-height: 1.5;
-    margin-top:3.5rem;
 }
 `
 

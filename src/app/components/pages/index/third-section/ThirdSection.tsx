@@ -6,7 +6,6 @@ import { CardBodyS3,CardMediaS3, CardsContainerS3, CardTitleS3, CustomCardS3, Qu
 from './third.styled';
 import { GetQouteButton } from '../second-section/second-section.styled';
 import tempbiryaniJPG from "./thirdsectionassets/tempbiryanibg.jpeg"
-import tempcrown from "./thirdsectionassets/tempcrown.jpg"
 
 
 function ThirdSection() {
@@ -25,7 +24,8 @@ function ThirdSection() {
             >
               <img src={tempbiryaniJPG.src} alt='biryani-bg'style={{
                 width:"100%",
-                height:'200px'
+                height:'200px',
+                position:'absolute',
               }}/>
               <CardMediaS3
                 image={card.image.src}                
