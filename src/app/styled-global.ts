@@ -1,7 +1,7 @@
 "use client"
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
-
+import {desktop} from "@/app/utils/media"
  export const GlobalStyles = createGlobalStyle`
   html {
     margin: 0;
