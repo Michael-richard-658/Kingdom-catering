@@ -1,6 +1,6 @@
 import { Card, CardMedia, Typography } from "@mui/material";
 import styled from "styled-components";
-import {mobile} from "@/app/utils/media"
+import {desktop, mobile} from "@/app/utils/media"
 
 
 export const WhyChooseKingdomCateringSection = styled.div`
@@ -23,6 +23,9 @@ ${mobile}{
     margin-right: 20%;
     margin-bottom: 8px;
 }
+    ${desktop}{
+        font-size: 24px;
+    }
 `
 
 export const CardsContainerS3 = styled.div`
@@ -33,9 +36,14 @@ ${mobile}{
     align-items: center;
     justify-content: center;
     width: 100%;
-    column-gap: 8px;
-    gap:4%
+    
 }
+    ${desktop}{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);     
+    gap:16px;  
+    }   
+
 ` 
 
 export const CustomCardS3 = styled(Card)`
@@ -49,6 +57,10 @@ ${mobile}{
     flex-direction: column;
     align-items: center;
 }
+    ${desktop}{
+    width: 100%;
+    height: 100%;
+    }
 `
 /*
 display: flex;
@@ -65,6 +77,18 @@ display: flex;
     margin-bottom:14px
     */
 
+export const CardBGImage = styled.img`
+${mobile}{
+    width:100%;
+    height:200px;
+    position:absolute;
+}
+ ${desktop}{
+    
+    }
+
+`
+
 export const CardMediaS3 = styled(CardMedia)`
 ${mobile}{
     width: 120px;
@@ -73,8 +97,15 @@ ${mobile}{
     opacity: 1;
     z-index: 1;
     margin-top:140px;
-
 }
+    ${desktop}{
+    width: 120px;
+    min-height: 120px;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 1;
+    margin-top:40px;
+    }
 `
 export const CardTitleS3 = styled(Typography)`
 ${mobile}{

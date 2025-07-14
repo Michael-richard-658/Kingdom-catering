@@ -8,7 +8,7 @@ import CorporatePNG from "./Fourthsectionassets/corporate-event.png"
 
 
 
-interface Card {
+ interface  Card {
         image:StaticImageData,
         event:string,
         description:string

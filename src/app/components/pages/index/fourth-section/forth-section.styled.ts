@@ -1,6 +1,6 @@
 import { Card, Typography } from "@mui/material";
 import styled from "styled-components";
-import {mobile} from "@/app/utils/media"
+import {desktop, mobile} from "@/app/utils/media"
 
 export const PerfectForAllMomentsContainer = styled.div`
  ${mobile}{
@@ -32,7 +32,7 @@ export const CardsConatinerS4 = styled.div`
 `
 
 export const CustomCardS4 = styled(Card)`
- ${mobile}{
+ {
     display: flex;
     flex-direction: column;
     align-items: center;
