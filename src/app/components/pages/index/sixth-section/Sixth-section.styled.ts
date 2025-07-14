@@ -1,6 +1,6 @@
 import { Accordion,  Typography } from "@mui/material";
 import styled from "styled-components";
-import {mobile,desktop} from "@/app/utils/media"
+import {desktop, mobile} from "@/app/utils/media"
 
 
 export const SixthSectionContainer = styled.div`
@@ -11,9 +11,8 @@ export const SixthSectionContainer = styled.div`
     margin-top: 32px;
 }
     ${desktop}{
-    width: 100%;
+    margin-top: 32px;
 }
-
 `
 
 export const FAQSH3 = styled.h3`
@@ -27,10 +26,10 @@ export const FAQSH3 = styled.h3`
     ${desktop}{
     font-weight: 700;
     color: #1C170D;
-    font-size: 24px;
+    font-size: 25px;
     width: 100%;
+    margin-left: 5.5%;
 }
-    
 `
 
 export const FAQSConatiner = styled.div`
@@ -41,13 +40,12 @@ export const FAQSConatiner = styled.div`
     align-items: center;
 }
     ${desktop}{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}`
-
-/*
+    }
+`/*
 
 export const FAQSCard = styled(Card).withConfig({
   shouldForwardProp: (prop) => prop !== "isOpen"
@@ -122,17 +120,18 @@ export const FAQAccordion = styled(Accordion)`
     display: none;
   }
 }
-    
-    ${desktop}{
-    width: 110%;
-    margin-bottom: 16px !important;
-    border-radius: 12px !important;     
+       ${desktop}{
+    width: 100%;
+    margin-bottom: 16px  !important;
+    border-radius: 12px !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
     border:none;
-    &::before {
-      display: none;
-    }
-  }    
+    
+     &::before {
+    display: none;
+  }
+}
+     
 `
 
 export const FAQQuestion  = styled(Typography)`
@@ -148,3 +147,10 @@ export const FAQAnswer = styled(Typography)`
     font-weight:400
 }
 `
+export const AccordionCenter = styled.div`
+    ${desktop}{
+       display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+    `
