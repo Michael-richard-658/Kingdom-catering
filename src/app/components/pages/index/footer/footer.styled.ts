@@ -122,8 +122,8 @@ export const WhastAppIcon = styled.img`
     cursor: pointer;
     }
     ${desktop}{
-        height:40px;
-        width:50px;
+        height:50px;
+        width:40px;
         cursor: pointer;
     }
 `
@@ -134,8 +134,8 @@ export const LinkedInIcon = styled.img`
     cursor: pointer;
     }
     ${desktop}{
-        height:40px;
-        width:50px;
+        height:50px;
+        width:40px;
         cursor: pointer;
     }
 `

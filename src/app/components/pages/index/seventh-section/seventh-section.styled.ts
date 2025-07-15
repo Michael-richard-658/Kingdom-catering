@@ -41,6 +41,7 @@ export const MakeEventRoyaleDescription = styled(Typography)`
     color: #1C170D;
     font-size: 20px;
     margin-bottom: 16px;
+    line-height:1.2;
 }
     ${desktop}{
         font-size:20px

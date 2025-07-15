@@ -50,7 +50,7 @@ export const CardsContainer = styled.div`
 export const CustomCard = styled(Card)`
   ${mobile} {
     margin-bottom: 1rem;
-    background-color: rgba(252, 250, 247, 0.45);
+    background-color: white;
     border-radius: 15px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
                 0 2px 4px rgba(0, 0, 0, 0.03);

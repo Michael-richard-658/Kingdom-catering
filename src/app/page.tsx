@@ -10,7 +10,9 @@ import Footer from    "./components/pages/index/footer/footer"
 import { ComponentsContainer, StaticBackGround } from "./styled-global";
 
 export default function Home() {
+  //change bg color to white of cards
   return (
+    
     <>
     
       <StaticBackGround />

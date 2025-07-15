@@ -1,10 +1,14 @@
-import { Card, CardMedia, Typography } from "@mui/material";
+import { Card, CardMedia, Container, Typography } from "@mui/material";
 import styled from "styled-components";
-import {mobile} from "@/app/utils/media"
+import {desktop, mobile} from "@/app/utils/media"
 
 export const ReviewsSectionContainer = styled.div`
 ${mobile}{
     margin-top:3.5rem;
+}
+${desktop}{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 }
 ` 
 
@@ -15,6 +19,12 @@ ${mobile}{
     font-weight: 700;
     font-size: 27px;
 }
+${desktop}{
+    color: #1C170D;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
 `
 
 export const ReviewsContainer = styled.div`
@@ -24,13 +34,28 @@ ${mobile}{
     align-items: center;
     gap: 1rem;
 }
+    ${desktop}{
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    justify-content: center;
+    gap:16px;
+    width: 100%;
+    margin-left: calc((100% - 100%) / 2);
+}
 `
 export const CustomCardS5 = styled(Card)`
 ${mobile}{
     border-radius: 12px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
     width: 96%;
-    background-color: rgba(252, 250, 247, 0.45);
+    background-color: white;
+}
+${desktop}{
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
+    width: 100%;
+    background-color: white;
 }
 `
 
@@ -40,6 +65,11 @@ ${mobile}{
     flex-direction: row;
     align-items: center;
 }
+${desktop}{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
 `
 /*export const ReviewProfile = styled(CardMedia)`
 ${mobile}{
@@ -61,6 +91,10 @@ ${mobile}{
     text-wrap:nowrap;
     font-weight:500;
 }
+${desktop}{
+    margin-top:8px;
+    font-weight: 500;
+}
 `
 
 export const ReviewDate = styled(Typography)`
@@ -73,10 +107,20 @@ ${mobile}{
 
 export const ReviewDescription = styled(Typography)`
 ${mobile}{
+    margin: 16px 16px;
+    color: #1C170D;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+${desktop}{
     margin: 1rem 1rem;
     color: #1C170D;
     font-weight: 500;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
 }
 
+
 `
+export const ReviewsConatiner = styled(Container)`
+${desktop}{
+}`

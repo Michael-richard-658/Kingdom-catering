@@ -42,7 +42,7 @@ function ForthSection() {
                 image={card.image.src}
                 alt={card.event}
                 sx={{
-                  width: isDesktop ? "60%" : "100%",
+                  width: isDesktop ? "10%" : "100%",
                   borderRadius: "16px",
                 }}
               />
